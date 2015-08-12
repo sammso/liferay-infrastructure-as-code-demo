@@ -12,6 +12,7 @@ Set up a Liferay cluster on existing infrastructure
   * go to `fake_production` and run `vagrant up`
   * download `Liferay 6.2 CE GA4` [tomcat bundle](http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.2.3%20GA4/liferay-portal-tomcat-6.2-ce-ga4-20150416163831865.zip) and save it in `files/liferay-portal-tomcat-6.2-ce-ga4.zip`  
   * go to `provision_liferay_cluster`
+  * if you do not have ansible installed then you can find install instructions from http://docs.ansible.com/ansible/intro_installation.html
   * run `ansible-galaxy install -r requirements.yml`
   * wait for Vagrant (from the first step above) to start all virtual servers (db, app1, app2, web) 
   * run `ansible-playbook site.yml` (it make take a long while to complete)
